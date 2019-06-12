@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Online Fruit Shop</title>
+</head>
+
+<body>
+    <header>
+        <h1>Fruit Shop</h1>
+    </header>
+    <main>
+        <section id="pocket">
+            <p>I have Rs.</p><input type="number">
+        </section>
+        <section id="bill">
+            <p>Your total is Rs.</p><input type="text" value="20">
+        </section>
+        <section id="market">
+            <div class="product">
+                <figure id="apple">
+                    <div class="price">
+                        <p>Rs. <span>10</span></p>
+                    </div>
+                    <img src="images/apple.png" alt="apple">
+                    <figcaption>Apple</figcaption>
+                    <form>
+                        <button class="value-button" id="decrease"
+                            value="Decrease Value">-</button>
+                        <input type="number" id="number" value="0"/>
+                        <button class="value-button" id="increase"
+                            value="Increase Value">+</button>
+                    </form>
+                </figure>
+            </div>
+            <div class="product">
+                <figure id="orange">
+                    <div class="price">
+                        <p>Rs. <span>10</span></p>
+                    </div>
+                    <img src="images/orange.png" alt="orange">
+                    <figcaption>Orange</figcaption>
+                    <form>
+                        <button class="value-button" id="decrease"
+                            value="Decrease Value">-</button>
+                        <input type="number" id="number" value="0" />
+                        <button class="value-button" id="increase"
+                            value="Increase Value">+</button>
+                    </form>
+                </figure>
+            </div>
+            <div class="product">
+
+                <figure id="banana">
+                    <div class="price">
+                        <p>Rs. <span>7</span></p>
+                    </div>
+                    <img src="images/banana.png" alt="banana">
+                    <figcaption>Banana</figcaption>
+                    <form>
+                        <button class="value-button" id="decrease"
+                            value="Decrease Value">-</button>
+                        <input type="number" id="number" value="0" />
+                        <button class="value-button" id="increase"
+                            value="Increase Value">+</button>
+                    </form>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
