@@ -1,163 +1,163 @@
 body{
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 header{
-    width: 100%;
-    background-image: linear-gradient(#434745, #60687d,  #434747);
-    display: flex;
-    color: white;
-    justify-content: center;
-    font-size: 0.8em;
-    height: 80px;
-    align-items: center;
+  width: 100%;
+  background-image: linear-gradient(#434745, #60687d,  #434747);
+  display: flex;
+  color: white;
+  justify-content: center;
+  font-size: 0.8em;
+  height: 80px;
+  align-items: center;
 }
 #pocket{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
 }
 #pocket p{
-    font-size: 1.3em;
-    font-weight: 900;
+  font-size: 1.3em;
+  font-weight: 900;
 }
 #pocket input{
-    border: 1px solid #e4e2e2;
-    border-radius: 29px;
-    width: 5em;
-    height: 2em;
-    font-size: 1.2em;
-    font-weight: bold;
-    text-align: center;
+  border: 1px solid #e4e2e2;
+  border-radius: 29px;
+  width: 5em;
+  height: 2em;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
 }
 #bill {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 900;
-    font-size: 1.5em;
-    padding: 57px 0;
-    background-color: #efe2cc;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  font-size: 1.5em;
+  padding: 57px 0;
+  background-color: #efe2cc;
 }
 #bill input{
-    border: none;
-    color: #ed462f;
-    font-size: 2.5em;
-    width: 1em;
-    font-family: auto;
-    background-color: inherit;
+  border: none;
+  color: #ed462f;
+  font-size: 2.5em;
+  width: 1em;
+  font-family: auto;
+  background-color: inherit;
 }
 .price{
-    background-color: #346e34;
-    color: #f2ddb2;
-    padding: 7px 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  background-color: #346e34;
+  color: #f2ddb2;
+  padding: 7px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .product img{
-    height: 90px;
-    width: 65%;
+  height: 90px;
+  width: 65%;
 }
 .product{
-    display:flex;
-    
+  display:flex;
+  
 
 }
 .product figure{
-  width: 170px;
-  display: flex;
-  flex-direction:column;
-  justify-content: center;
-  align-items: center;
-  background-color: #f3f3f3;
-  padding-bottom: 15px;
-  border-radius: 5px;
-  margin: 30px;
-  font-weight: 900;
+width: 170px;
+display: flex;
+flex-direction:column;
+justify-content: center;
+align-items: center;
+background-color: #f3f3f3;
+padding-bottom: 15px;
+border-radius: 5px;
+margin: 30px;
+font-weight: 900;
 }
 #market{
-    display: flex;
-    justify-content: center;
-    background-image: linear-gradient(#434745, #60687d,  #434747);
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(#434745, #60687d,  #434747);
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
 }
 #market p{
-  margin:0;
-  
+margin:0;
+
 }
 
 /* for increasing and decreasing shopping amount */
-form {
-    display: flex;
-    width: 118px;
-    justify-content: center;
+div.buy {
+  display: flex;
+  width: 118px;
+  justify-content: center;
+  margin: 0;
+  height: 29px;
+  z-index: 1;
+  border: 1px solid #7f8283;
+  text-align: center;
+  border-radius: 23px;
+}
+div.buy input{
+   background-image: linear-gradient(#c8c7c7,white);
+ 
+}
+.buy button {
+  display: inline-block;
+  margin: 0px;
+  width: 27px;
+  height: 29px;
+  text-align: center;
+  border: none;
+  color: white;
+  font-size: 1em;
+  vertical-align: middle;
+  padding: 0;
+  background-image:linear-gradient( #434948, #5a6260);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.buy button:hover {
+  cursor: pointer;
+}
+
+div.buy .decrease {
+  margin-right: -4px;
+  border-radius: 23px 0 0 23px;
+}
+
+div.buy .increase {
+  margin-left: -4px;
+  border-radius: 0 23px 23px 0;
+}
+
+div.buy #input-wrap {
+  margin: 0px;
+  padding: 0px;
+  }
+
+.buy input {
+  text-align: center;
+  border: none;
+  margin: 0px;
+  width: 72px;
+  height: 29px;
+  padding: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
     margin: 0;
-    height: 29px;
-    z-index: 1;
-    border: 1px solid #7f8283;
-    text-align: center;
-    border-radius: 23px;
-  }
-  form input{
-     background-image: linear-gradient(#c8c7c7,white);
-   
-  }
-  .value-button {
-    display: inline-block;
-    margin: 0px;
-    width: 27px;
-    height: 29px;
-    text-align: center;
-    border: none;
-    color: white;
-    font-size: 1em;
-    vertical-align: middle;
-    padding: 0;
-    background-image:linear-gradient( #434948, #5a6260);
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  
-  .value-button:hover {
-    cursor: pointer;
-  }
-  
-  form #decrease {
-    margin-right: -4px;
-    border-radius: 23px 0 0 23px;
-  }
-  
-  form #increase {
-    margin-left: -4px;
-    border-radius: 0 23px 23px 0;
-  }
-  
-  form #input-wrap {
-    margin: 0px;
-    padding: 0px;
-    }
-  
-  input#number {
-    text-align: center;
-    border: none;
-    margin: 0px;
-    width: 72px;
-    height: 29px;
-    padding: 0;
-  }
-  
-  input[type=number]::-webkit-inner-spin-button,
-  input[type=number]::-webkit-outer-spin-button {
-      -webkit-appearance: none;
-      margin: 0;
-  }
+}
