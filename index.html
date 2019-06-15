@@ -19,7 +19,7 @@
             <p>I have Rs.</p><input type="number" min="0">
         </section>
         <section id="bill">
-            <p>Your total is Rs.</p><input type="text" value="20">
+            <p>Your total is Rs.</p><input type="text" value="0">
         </section>
         <section id="market">
             <div class="product">
@@ -30,7 +30,7 @@
                     <img src="images/apple.png" alt="apple">
                     <figcaption>Apple</figcaption>
                     <div class="buy">
-                        <button class="decrease">-</button>
+                        <button class="decrease" onclick="minusApple()">-</button>
                         <input type="number" min="0" id="apple-number" value="0" />
                         <button class="increase" onclick="addApple ()">+</button>
                     </div>
@@ -44,7 +44,7 @@
                     <img src="images/orange.png" alt="orange">
                     <figcaption>Orange</figcaption>
                     <div class="buy">
-                        <button class="decrease">-</button>
+                        <button class="decrease" onclick="minusOrange()">-</button>
                         <input type="number" min="0" id="orange-number" value="0" />
                         <button class="increase" onclick="addOrange ()">+</button>
                     </div>
@@ -59,7 +59,7 @@
                     <img src="images/banana.png" alt="banana">
                     <figcaption>Banana</figcaption>
                     <div class="buy">
-                        <button class="decrease">-</button>
+                        <button class="decrease" onclick="minusBanana()">-</button>
                         <input type="number" min="0" id="banana-number" value="0" />
                         <button class="increase" onclick="addBanana ()">+</button>
                     </div>

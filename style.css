@@ -121,6 +121,7 @@ div.buy {
   vertical-align: middle;
   padding: 0;
   background-image:linear-gradient( #434948, #5a6260);
+  outline: none;
   
 }
 
