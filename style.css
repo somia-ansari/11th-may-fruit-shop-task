@@ -18,6 +18,7 @@ header{
   justify-content: center;
   align-items: center;
   height: 70px;
+  flex-wrap: wrap;
 }
 #pocket p{
   font-size: 1.3em;
@@ -38,6 +39,7 @@ header{
   justify-content: center;
   align-items: center;
   font-weight: 900;
+  flex-wrap: wrap;
   font-size: 1.5em;
   padding: 57px 0;
   background-color: #efe2cc;
@@ -64,6 +66,7 @@ header{
 }
 .product{
   display:flex;
+  width: fit-content;
   
 
 }
@@ -86,6 +89,7 @@ font-weight: 900;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 #market p{
 margin:0;
@@ -104,10 +108,7 @@ div.buy {
   text-align: center;
   border-radius: 23px;
 }
-div.buy input{
-   background-image: linear-gradient(#c8c7c7,white);
- 
-}
+
 .buy button {
   display: inline-block;
   margin: 0px;
@@ -120,12 +121,7 @@ div.buy input{
   vertical-align: middle;
   padding: 0;
   background-image:linear-gradient( #434948, #5a6260);
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  
 }
 
 .buy button:hover {
@@ -142,11 +138,6 @@ div.buy .increase {
   border-radius: 0 23px 23px 0;
 }
 
-div.buy #input-wrap {
-  margin: 0px;
-  padding: 0px;
-  }
-
 .buy input {
   text-align: center;
   border: none;
@@ -154,6 +145,8 @@ div.buy #input-wrap {
   width: 72px;
   height: 29px;
   padding: 0;
+  background-image: linear-gradient(#c8c7c7,white);
+
 }
 
 input[type=number]::-webkit-inner-spin-button,
