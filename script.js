@@ -1,16 +1,12 @@
-let totalBill = document.querySelector ('#bill input').value;
 
 // For buying bananas
-
+let banana = parseInt(document.querySelector('#banana-number').value);
 function addBanana () {
-    var banana = parseInt(document.querySelector('#banana-number').value);
     banana++;
 
     document.querySelector('#banana-number').value = banana;
 }
-
 function minusBanana() {
-    var banana = parseInt(document.querySelector('#banana-number').value);
     banana < 1? banana = 1: '';
     banana--;
 
@@ -18,32 +14,38 @@ function minusBanana() {
 }
 // For buying apples
 function addApple () {
-    var apple = parseInt(document.querySelector('#apple-number').value);
-    apple++;
+    apples++;
 
-    document.querySelector('#apple-number').value = apple;
+    document.querySelector('#apple-number').value = apples;
 }
-function minusApple() {
-    var apple = parseInt(document.querySelector('#apple-number').value);
-    apple < 1? apple = 1: '';
-    apple--;
+let apples = parseInt(document.querySelector('#apple-number').value);
+    let pricePerApple = document.querySelector('#apple p span').innerHTML;
 
-    document.querySelector('#apple-number').value = apple;
+function minusApple() {
+    apples < 1? apples = 1: '';
+    apples--;
+
+
+    document.querySelector('#apple-number').value = apples;
+    let costOfApple = 10;
+    let cost = apples * costOfApple;
+
+    // apples * pricePerApple = costOfApple;
 }
 // For buying oranges
 
 function addOrange () {
-    var orange = parseInt(document.querySelector('#orange-number').value);
     orange++;
 
     document.querySelector('#orange-number').value = orange;
 }
+let orange = parseInt(document.querySelector('#orange-number').value);
 function minusOrange() {
-    var orange = parseInt(document.querySelector('#orange-number').value);
     orange < 1? orange = 1: '';
     orange--;
 
     document.querySelector('#orange-number').value = orange;
 }
-// For making bill of oranges
-    let costOfOrange = document.querySelector(orange);
+// For making bill of apples
+let totalBill = parseInt(document.querySelector ('#bill input').value);
+totalBill = apples * 10;
