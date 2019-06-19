@@ -1,51 +1,75 @@
 
 // For buying bananas
-let banana = parseInt(document.querySelector('#banana-number').value);
+let banana = 0;
 function addBanana () {
-    banana++;
+    let pocket = document.querySelector('#pocket input').value;
+    let bill = document.querySelector('#bill input').value;
 
-    document.querySelector('#banana-number').value = banana;
+    if (pocket <= bill ) {
+        alert("You have not enough money to buy Bananas");
+    }
+    else {
+        document.querySelector('#banana-number').value = ++banana;
+        updateBill();
+    }
+    
 }
 function minusBanana() {
     banana < 1? banana = 1: '';
-    banana--;
-
-    document.querySelector('#banana-number').value = banana;
+    document.querySelector('#banana-number').value = --banana;
+    updateBill();
 }
 // For buying apples
 function addApple () {
-    apples++;
 
-    document.querySelector('#apple-number').value = apples;
+let pocket = document.querySelector('#pocket input').value;
+let bill = document.querySelector('#bill input').value;
+
+    if (pocket <= bill ) {
+        alert("You have not enough money to buy Apple");
+    }
+    else {
+        document.querySelector('#apple-number').value = ++apples;
+        updateBill();
+    }
 }
-let apples = parseInt(document.querySelector('#apple-number').value);
-    let pricePerApple = document.querySelector('#apple p span').innerHTML;
-
+let apples = 0;
 function minusApple() {
     apples < 1? apples = 1: '';
-    apples--;
-
-
-    document.querySelector('#apple-number').value = apples;
-    let costOfApple = 10;
-    let cost = apples * costOfApple;
-
-    // apples * pricePerApple = costOfApple;
+    document.querySelector('#apple-number').value = --apples;   
+updateBill();
 }
 // For buying oranges
 
 function addOrange () {
-    orange++;
-
-    document.querySelector('#orange-number').value = orange;
+    let pocket = document.querySelector('#pocket input').value;
+    let bill = document.querySelector('#bill input').value;
+    
+        if (pocket <= bill ) {
+            alert("You have not enough money to buy Orange");
+        }
+        else {
+            document.querySelector('#orange-number').value = ++orange;
+            updateBill();
+        }
 }
-let orange = parseInt(document.querySelector('#orange-number').value);
+let orange = 0;
 function minusOrange() {
     orange < 1? orange = 1: '';
-    orange--;
 
-    document.querySelector('#orange-number').value = orange;
+    document.querySelector('#orange-number').value = --orange;
+    updateBill();
 }
-// For making bill of apples
-let totalBill = parseInt(document.querySelector ('#bill input').value);
-totalBill = apples * 10;
+// For making bills
+
+function updateBill() {
+    const totalApplePrice = apples * 10;
+    const totalOrangePrice = orange * 15;
+    const totalBananaPrice = banana * 7;
+    let bill = document.querySelector('#bill input').value;
+    
+    bill = totalApplePrice + totalOrangePrice + totalBananaPrice;
+    document.querySelector('#bill input').value = bill;
+  }
+  
+
