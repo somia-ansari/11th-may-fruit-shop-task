@@ -4,7 +4,7 @@ function updateBill() {
     const totalApplePrice = apples * 10;
     const totalOrangePrice = orange * 15;
     const totalBananaPrice = banana * 7;
-    let bill = document.querySelector('#bill input').value;
+    let bill = parseInt(document.querySelector('#bill input').value);
 
     bill = totalApplePrice + totalOrangePrice + totalBananaPrice;
     document.querySelector('#bill input').value = bill;
@@ -14,8 +14,8 @@ function updateBill() {
 
 function addApple() {
 
-    let pocket = document.querySelector('#pocket input').value;
-    let bill = document.querySelector('#bill input').value;
+    let pocket = parseInt(document.querySelector('#pocket input').value);
+    let bill = parseInt(document.querySelector('#bill input').value);
 
     if (pocket <= bill) {
         alert("You have not enough money to buy Apple");
@@ -34,8 +34,8 @@ function minusApple() {
 // For buying oranges
 
 function addOrange() {
-    let pocket = document.querySelector('#pocket input').value;
-    let bill = document.querySelector('#bill input').value;
+    let pocket = parseInt(document.querySelector('#pocket input').value);
+    let bill = parseInt(document.querySelector('#bill input').value);
 
     if (pocket <= bill) {
         alert("You have not enough money to buy Orange");
@@ -56,8 +56,8 @@ function minusOrange() {
 let banana = 0;
 
 function addBanana() {
-    let pocket = document.querySelector('#pocket input').value;
-    let bill = document.querySelector('#bill input').value;
+    let pocket = parseInt(document.querySelector('#pocket input').value);
+    let bill = parseInt(document.querySelector('#bill input').value);
 
     if (pocket <= bill) {
         alert("You have not enough money to buy Bananas");
