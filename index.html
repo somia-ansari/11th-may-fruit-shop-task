@@ -19,7 +19,7 @@
             <p>I have Rs.</p><input type="number" value="0">
         </section>
         <section id="bill">
-            <p>Your total is Rs.</p><input type="number" value="0">
+            <p>Your total is Rs.</p><input type="number" readonly value="0">
         </section>
         <section id="market">
             <div class="product">
@@ -32,7 +32,7 @@
                     <div class="buy">
                         <button class="decrease" onclick="minusApple()">-</button>
                         <input type="number" min="0" id="apple-number" value="0" />
-                        <button class="increase" onclick="addApple ()">+</button>
+                        <button class="increase" onclick="addApple()">+</button>
                     </div>
                 </figure>
             </div>
@@ -46,7 +46,7 @@
                     <div class="buy">
                         <button class="decrease" onclick="minusOrange()">-</button>
                         <input type="number" min="0" id="orange-number" value="0" />
-                        <button class="increase" onclick="addOrange ()">+</button>
+                        <button class="increase" onclick="addOrange()">+</button>
                     </div>
                 </figure>
             </div>
@@ -61,12 +61,14 @@
                     <div class="buy">
                         <button class="decrease" onclick="minusBanana()">-</button>
                         <input type="number" min="0" id="banana-number" value="0" />
-                        <button class="increase" onclick="addBanana ()">+</button>
+                        <button class="increase" onclick="addBanana()">+</button>
                     </div>
                 </figure>
             </div>
         </section>
     </main>
+
+    <button onclick="a()">Clickme</button>
     <script src="script.js"></script>
 </body>
 
