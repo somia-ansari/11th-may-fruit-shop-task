@@ -17,7 +17,7 @@ function addApple() {
     let pocket = parseInt(document.querySelector('#pocket input').value);
     let bill = parseInt(document.querySelector('#bill input').value);
 
-    if (pocket <= bill) {
+    if (pocket <= bill + 10) {
         alert("You have not enough money to buy Apple");
     } else {
         document.querySelector('#apple-number').value = ++apples;
@@ -37,7 +37,7 @@ function addOrange() {
     let pocket = parseInt(document.querySelector('#pocket input').value);
     let bill = parseInt(document.querySelector('#bill input').value);
 
-    if (pocket <= bill) {
+    if (pocket <= bill + 15) {
         alert("You have not enough money to buy Orange");
     } else {
         document.querySelector('#orange-number').value = ++orange;
@@ -59,7 +59,7 @@ function addBanana() {
     let pocket = parseInt(document.querySelector('#pocket input').value);
     let bill = parseInt(document.querySelector('#bill input').value);
 
-    if (pocket <= bill) {
+    if (pocket <= bill + 7) {
         alert("You have not enough money to buy Bananas");
     } else {
         document.querySelector('#banana-number').value = ++banana;
