@@ -27,9 +27,14 @@ function addApple() {
 let apples = 0;
 
 function minusApple() {
+  if(apples == 0){
+    alert("You don't have any Apples!");
+  }
+  else{
     apples < 1 ? apples = 1 : '';
     document.querySelector('#apple-number').value = --apples;
     updateBill();
+}
 }
 // For buying oranges
 
@@ -47,10 +52,15 @@ function addOrange() {
 let orange = 0;
 
 function minusOrange() {
-    orange < 1 ? orange = 1 : '';
+  if(orange == 0){
+    alert("You don't have any Oranges!");
+  }
+  else{
+  orange < 1 ? orange = 1 : '';
 
     document.querySelector('#orange-number').value = --orange;
     updateBill();
+  }
 }
 // For buying bananas
 let banana = 0;
@@ -69,7 +79,12 @@ function addBanana() {
 }
 
 function minusBanana() {
+  if(banana == 0){
+    alert("You don't have any Bananas!");
+  }
+  else{
     banana < 1 ? banana = 1 : '';
     document.querySelector('#banana-number').value = --banana;
     updateBill();
+    }
 }
